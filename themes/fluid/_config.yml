@@ -233,12 +233,12 @@ font:
 
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
-custom_js:
-
+custom_js: /js/custom.js
+  
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-custom_css:
-
+custom_css: /css/custom.css
+ 
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:
@@ -984,14 +984,13 @@ about:
   banner_img_height: 100
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  name: "FangShuohan"
+  intro: "A simple student"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, the icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/FangShuohan", tip: "GitHub" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "/img/wechat.png" }
 
 
 #---------------------------
@@ -1132,3 +1131,5 @@ static_prefix:
   hint: https://lib.baomitu.com/hint.css/2.7.0/
 
   moment: https://lib.baomitu.com/moment.js/2.29.4/
+
+custom_html: '<div id="startup-layer"><video id="startup-video" muted playsinline autoplay><source src="/img/startup.mp4" type="video/mp4"></video></div>'

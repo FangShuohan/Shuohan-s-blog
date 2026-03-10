@@ -1,0 +1,23 @@
+#startup-layer {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  /* 初始设为黑色，匹配视频开头 */
+  background-color: #000; 
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: opacity 0.8s ease;
+}
+
+#startup-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 强制开启高质量渲染，减少拉伸产生的模糊感 */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: contrast(1.1) brightness(1.05);
+}
