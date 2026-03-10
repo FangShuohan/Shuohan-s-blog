@@ -2,22 +2,30 @@
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  /* 初始设为黑色，匹配视频开头 */
-  background-color: #000; 
+  background-color: #fff; 
   z-index: 10000;
-  display: flex;
+  
+  /* 【核心修改 1】：默认就是隐藏的，彻底根治跳转后白屏的问题 */
+  display: none; 
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  transition: opacity 0.8s ease;
+  
+  /* 【核心修改 2】：设置淡出的过渡动画，0.8秒 */
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out; 
 }
 
-#startup-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* 强制开启高质量渲染，减少拉伸产生的模糊感 */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  filter: contrast(1.1) brightness(1.05);
+/* 专门用来控制淡出的类 */
+.startup-fade-out {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#lottie-container {
+  width: 80%; height: 80%;
+  max-width: 800px;
+  display: flex; justify-content: center; align-items: center;
+}
+#lottie-container svg {
+  width: 100% !important; height: auto !important; display: block;
 }

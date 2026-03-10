@@ -1132,4 +1132,8 @@ static_prefix:
 
   moment: https://lib.baomitu.com/moment.js/2.29.4/
 
-custom_html: '<div id="startup-layer"><video id="startup-video" muted playsinline autoplay><source src="/img/startup.mp4" type="video/mp4"></video></div>'
+custom_html: |
+  <div id="startup-layer">
+    <div id="lottie-container" style="width: 100%; height: 100%;"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
