@@ -40,8 +40,10 @@
 <meta property="og:image" content="http://example.com/img/image-20260526184006402.png">
 <meta property="og:image" content="http://example.com/img/image-20260526201512524.png">
 <meta property="og:image" content="http://example.com/img/image-20260526203213074.png">
+<meta property="og:image" content="http://example.com/img/image-20260527221554891.png">
+<meta property="og:image" content="http://example.com/img/image-20260527230726168.png">
 <meta property="article:published_time" content="2026-05-25T11:14:00.000Z">
-<meta property="article:modified_time" content="2026-05-26T15:02:25.535Z">
+<meta property="article:modified_time" content="2026-05-27T16:21:53.195Z">
 <meta property="article:author" content="Fang Shuohan">
 <meta property="article:tag" content="Note">
 <meta name="twitter:card" content="summary_large_image">
@@ -249,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.9k 字
+          6.5k 字
         
       </span>
     
@@ -260,7 +262,7 @@
         
         
         
-          42 分钟
+          55 分钟
         
       </span>
     
@@ -306,7 +308,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2026年5月26日 晚上
+                    本文最后更新于 2026年5月28日 凌晨
                   
                 
               </p>
@@ -325,7 +327,7 @@
 <h3 id="1-1-2-杂质半导体"><a href="#1-1-2-杂质半导体" class="headerlink" title="1.1.2 杂质半导体"></a>1.1.2 杂质半导体</h3><p><strong>N（Negative）型半导体</strong>：向本征半导体中掺入五价元素，如磷，取代硅的位置，就形成了N型半导体。</p>
 <img src="/img/image-20260525201237851.png" srcset="/img/loading.gif" lazyload alt="image-20260525201237851" style="zoom: 67%;" />
 
-<p>如图所示，由于五价元素的价电子多出一个，很容易就变成了自由电子，这时对应的五价元素原子称为<strong>施主原子</strong>。<!--注：此时杂质半导体本身仍不带电。虽然自由电子多了，但是相应的原子核的带正电量也增加了--></p>
+<p>如图所示，由于五价元素的价电子多出一个，很容易就变成了自由电子，这时对应的五价元素原子称为<strong>施主原子</strong>。注：此时杂质半导体本身仍不带电。虽然自由电子多了，但是相应的原子核的带正电量也增加了。</p>
 <p>（为什么用五价元素掺入半导体，而不用六价元素呢？原因大致有两个：一个是因为需要保证掺入后半导体仍然维持其晶体结构，所以掺入的杂质原子大小应接近硅；另一个原因是因为虽然六价元素价电子更多，但是原子核对价电子的束缚反而更大，反而不利于多出来的价电子转变为自由电子）</p>
 <p><strong>多子与少子</strong>：由于每掺入一个杂质原子就可以多出一个自由电子，而作为主体的四价元素通过本征激发产生自由电子和空穴的概率相当小，可以想见即使掺入的杂质原子很少，也会导致自由电子的浓度远远大过空穴的浓度，这时将较多的那种载流子称为多子，相应的较少的称为少子。</p>
 <p><strong>P（Positive）型半导体</strong>：向本征半导体中掺入三价元素，如硼，取代硅的位置，形成了P型半导体。</p>
@@ -345,10 +347,12 @@
 <img src="/img/image-20260525211956963.png" srcset="/img/loading.gif" lazyload alt="image-20260525211956963" style="zoom:67%;" />
 
 <p>PN结的P区接正，N区接负为正向导通。随着外加正向电压的增大，势垒被削弱，N区越来越多的自由电子可以获得足够的能量以越过耗尽层到达P区，扩散运动加强而漂移运动减弱，PN结<strong>变窄</strong>，直到产生正向电流导通。随着电压的增加，正向电流的增加是很迅速的，如果不加注意极其容易烧毁，所以应该在回路中串联一个电阻，确保最大电流不会超过U&#x2F;R。</p>
+<p>另外，加上正向电流后正向导通又称<strong>正向偏置</strong>，简称<strong>正偏</strong>。</p>
 <p><strong>反向截止</strong>：</p>
 <img src="/img/image-20260525212801152.png" srcset="/img/loading.gif" lazyload alt="image-20260525212801152" style="zoom:67%;" />
 
 <p>外电场与内电场的方向相同时，相当于进一步加高了势垒，阻止扩散运动，导致PN结<strong>变宽</strong>。可以想见，这里其实加强了漂移运动。不过由于少子的数量极少，且会随着电压的增加达到一个近似的稳定值，产生的电流可以忽略不计，因此认为此时处于截止状态，这股稳定的电流称为<strong>反向饱和电流</strong>。</p>
+<p>同理，PN结反向截止的时候又称<strong>反向偏置</strong>，简称<strong>反偏</strong>。</p>
 <p>由此，我们说明了PN结具有<strong>单向导电性</strong>，这是其他的导体所不具有的性质。</p>
 <p><strong>伏安特性</strong>：</p>
 <img src="/img/image-20260525215111852.png" srcset="/img/loading.gif" lazyload alt="image-20260525215111852" style="zoom:67%;" />
@@ -401,9 +405,7 @@
 <li>$I_F$：最高整流电流。允许通过的最大正向平均电流。</li>
 <li>$U_R$：最高反向工作电压。允许外加的最大反向电压。通常$U_R &#x3D; 0.5U_{BR}$，即留有一定余量，防止使用时偶尔超过最大反向工作电压。</li>
 <li>$I_R$：反向饱和电流。未击穿的反向电流</li>
-<li>$f_M$：最高工作频率。结电容容抗$&#x3D; \frac{1}{\omega C}$，当$\omega$很小的时候，容抗很大。而当$\omega$很大的时候，容抗越来越小，近似于导通。这时电流在近似的结电容上流动，也就破坏了单向导电性。+</li>
-<li>-+</li>
-<li>–</li>
+<li>$f_M$：最高工作频率。结电容容抗$&#x3D; \frac{1}{\omega C}$，当$\omega$很小的时候，容抗很大。而当$\omega$很大的时候，容抗越来越小，近似于导通。这时电流在近似的结电容上流动，也就破坏了单向导电性。</li>
 </ol>
 <hr>
 <p>然而，在实际运用过程中，二极管的伏安特性为非线性，计算起来较为复杂。所以，为了解决这个运用上的问题，我们需要对电路与原件进行等效，力求用线性元件等效非线性元件。</p>
@@ -435,7 +437,44 @@
 </ul>
 <hr>
 <p>现在，由于二极管的出现，半导体已经有了用武之地。然而，人们仍在尝试着一个东西——即用半导体材料真正代替电子管。这意味着，人们需要一个由半导体材料制成的，具有<strong>放大</strong>作用的器件。而这，就是双极晶体管。</p>
-<h2 id="1-3-双极晶体管（BJT）"><a href="#1-3-双极晶体管（BJT）" class="headerlink" title="1.3 双极晶体管（BJT）"></a>1.3 双极晶体管（BJT）</h2>
+<h2 id="1-3-双极晶体管（BJT）"><a href="#1-3-双极晶体管（BJT）" class="headerlink" title="1.3 双极晶体管（BJT）"></a>1.3 双极晶体管（BJT）</h2><img src="/img/image-20260527221554891.png" srcset="/img/loading.gif" lazyload alt="image-20260527221554891" style="zoom:67%;" />
+
+<p><strong>结构与符号</strong>：如图所示。三个区域三个电极两个PN结（发射结与集电结）</p>
+<ul>
+<li><p>发射区：发射载流子。掺杂浓度最高，这样才有足够的载流子够发射</p>
+</li>
+<li><p>集电区：收集载流子。掺杂浓度不能过大，但是面积得大。</p>
+</li>
+<li><p>基区：控制区。掺杂浓度较低，<strong>非常薄</strong>。（为什么要薄？详见后续放大作用的解释）</p>
+</li>
+<li><p>PNP与NPN型的区别：从符号上看，只有箭头不一样（箭头代表导通方向，很显然正向导通只能是P指向N）</p>
+</li>
+</ul>
+<h3 id="1-3-1-电流放大作用"><a href="#1-3-1-电流放大作用" class="headerlink" title="1.3.1 电流放大作用"></a>1.3.1 电流放大作用</h3><p><strong>何为放大</strong>？在学习放大作用之前，或许我们需要先了解两个事情：电流放大所带来的额外的能量并不是凭空产生的，一定是有外部在源源不断地输入（电源），而这里的三极管只起到一个对能量的<strong>控制作用</strong>；另外，放大的一个基本原则就是放大<strong>不能失真</strong>，要确保信息传递的准确性。接下来，让我们继续介绍。</p>
+<p><strong>基本共射放大电路</strong>：</p>
+<img src="/img/image-20260527230726168.png" srcset="/img/loading.gif" lazyload alt="image-20260527230726168" style="zoom:67%;" />
+
+<p>图中，$R_b$是限流电阻。从图中可以知道$V_{CC}$的电压大于$V_{BB}$。此时，$I_B$与$I_C$成比例，且后者是前者的放大（后者控制了电源）</p>
+<p><strong>具体机理</strong>：考虑内部载流子的运动。</p>
+<ol>
+<li><p>当发射结正偏：发射区的自由电子向基区扩散，同时基区的多子（空穴）向发射区扩散。然而，由于基区掺杂浓度很低，所以空穴的浓度很少，所以对应的电流$I_{EP}$很小。而发射区的掺杂浓度很高，所以对应的电流$I_{EN}$很大。</p>
+</li>
+<li><p>这时再考虑基区：当大量的自由电子来到基区，一边和基区的多子——空穴复合（如前所述，基区做的非常薄，所以复合的相当少），一边继续向集电结扩散。 这个过程中，<strong>基区的宽度和掺杂浓度就决定了复合的百分比</strong>。</p>
+</li>
+<li><p>然而，在来到基区的自由电子发生复合的时候，如果没有其他措施，<strong>会破坏半导体本身的电中性</strong>（因为平白无故少了个正电荷）。所以，在有外部电场的帮助下，半导体材料的价电子很容易被抽走，形成自由电子和空穴，进而也就形成了所谓的$I_B$。</p>
+</li>
+<li><p>同时，又因为有集电结反偏，所以存在一个电场把大量扩散到集电结的自由电子移走，避免自由电子聚集，而降低扩散速度，进而无法保证比例放大。<strong>如果没有这反偏，就会导致电子聚集在交界处，从而导致扩散速度无法提高，即$I_C$电流无法增大，但基区由于自由电子浓度增高，复合增多，导致$I_B$电流增大</strong>。</p>
+</li>
+<li><p>经过上述过程，我们就会发现一件有趣的事情：形成$I_B$的那一部分自由电子，和被复合吞掉的自由电子大致相等，也就和形成$I_C$的扩散电子成比例，<strong>即$I_B$和$I_C$成比例</strong>。</p>
+</li>
+<li><p>另外，$I_{CBO}$在这里很显然就是集电结的反向饱和电流（毕竟是反偏，一定会有漂流运动），同样很小，可以忽略。除此以外，在$I_B$电流为0时，虽然理论上$I_C$也应该为0，但是实际上还有一个很小的电流$I_{CEO}$，即<strong>穿透电流</strong></p>
+</li>
+</ol>
+<hr>
+<p>由上述分析，我们可以得出<strong>共射（指比较的两个电流共用发射基）直流电放大系数</strong>的概念，以及其表达式：<br>$$<br>\overline{\beta} &#x3D; \frac{I_{CN}}{I_{BN}}&#x3D;\frac{I_C-I_{CBD}}{I_B+I_{CBD}}\approx\frac{I_C}{I_B}<br>$$<br>或交流形式下有：<br>$$<br>\beta&#x3D;\frac{\Delta I_C}{\Delta I_B}<br>$$<br>不过大部分情况下，这俩可以近似。</p>
+<p>同理，还有<strong>共基放大系数</strong>：<br>$$<br>\overline\alpha&#x3D;\frac{I_C}{I_E}<br>$$<br>同理，交流电形势下表达式与直流形式下相同，这里不再赘述。</p>
+<p>又因为$I_B&#x3D;I_C+I_B$，所以通过一系列代换可以得到：<br>$$<br>\beta&#x3D;\frac{\alpha}{1-\alpha} 或 \alpha&#x3D;\frac{\beta}{1+\beta}<br>$$</p>
+
                 
               </div>
             
